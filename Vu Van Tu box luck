@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Luck</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      width: 200px;
+      padding: 10px;
+      margin: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🎁 Câu hỏi: Chọn các món quà bên dưới 🎁</h2>
+
+<button onclick="choose(20000)">20.000</button><br>
+<button onclick="choose(50000)">50.000</button><br>
+<button onclick="choose(100000)">100.000</button><br>
+<button onclick="choose(200000)">200.000</button><br>
+<button onclick="choose(500000)">500.000</button>
+
+<script>
+function choose(value) {
+  // Bất kể bấm gì → luôn gán kết quả là 50.000
+  const answer = 50000;
+
+  alert(
+    "Bạn đã chọn: " + value.toLocaleString("vi-VN") + "đ\n" +
+    "🎉 Phần thưởng nhận được: " + answer.toLocaleString("vi-VN") + "đ"
+  );
+}
+</script>
+
+</body>
+</html>
